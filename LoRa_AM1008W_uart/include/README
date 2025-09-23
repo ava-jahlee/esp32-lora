@@ -1,0 +1,8 @@
+This directory is intended for project header files.
+
+A header file is a file containing C declarations and macro definitions
+to be shared between several project source files. The C preprocessor
+will replace '#include "headerfile.h"' with the contents of 'headerfile.h'.
+
+For more information about PlatformIO Library Dependency Finder
+- https://docs.platformio.org/page/librarymanager/ldf.html
