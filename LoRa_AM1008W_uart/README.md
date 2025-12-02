@@ -1,6 +1,6 @@
 # LoRa AM1008W-K-P 센서 프로젝트
 
-이 프로젝트는 Heltec WiFi LoRa 32 V3 보드에 AM1008W-K-P 센서를 연결하여 LoRaWAN을 통해 TTN으로 데이터를 전송하는 시스템입니다.
+**Heltec WiFi LoRa 32 V3 보드**에 **AM1008W-K-P 센서**(UART)를 연결하여 **LoRaWAN**을 통해 **TTN**으로 데이터를 전송하는 파이프라인입니다.
 
 ## 하드웨어 구성
 
@@ -146,4 +146,4 @@ MIT License
 
 ## 작성자
 
-FMU 기초연구팀
+EAN RU 이정아 연구원
