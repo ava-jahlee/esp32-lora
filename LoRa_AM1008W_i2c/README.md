@@ -146,5 +146,6 @@ MIT License
 
 ## 작성자
 
-FMU 기초연구팀
+EAN RU 이정아 연구원
+
 
