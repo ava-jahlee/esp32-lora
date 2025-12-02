@@ -12,19 +12,19 @@ const uint32_t uplinkIntervalSeconds = 1UL * 60UL; // 60초 단위(AM1008W-K-P �
 
 // joinEUI - previous versions of LoRaWAN called this AppEUI
 // for development purposes you can use all zeros - see wiki for details
-#define RADIOLIB_LORAWAN_JOIN_EUI  0x000078D1E625B951 // TTN 등록 Application의 JOIN_EUI
+#define RADIOLIB_LORAWAN_JOIN_EUI  0x000078D1E625B950 // TTN 등록 Application의 JOIN_EUI
 
 #ifndef RADIOLIB_LORAWAN_DEV_EUI
-#define RADIOLIB_LORAWAN_DEV_EUI   0x0000A00167BA2010 // TTN 등록 Application - Device의 DEV_EUI
+#define RADIOLIB_LORAWAN_DEV_EUI   0x0000A00167BA2015 // TTN 등록 Application - Device의 DEV_EUI
 #endif
 
 #ifndef RADIOLIB_LORAWAN_APP_KEY
-#define RADIOLIB_LORAWAN_APP_KEY   0xF1, 0x79, 0xA3, 0xA3, 0xF9, 0x5F, 0xDB, 0x88, 0xCB, 0xC5, 0xC7, 0xAA, 0xB8, 0x42, 0xBC, 0x95 // TTN 등록 Application - Device의 APP_KEY
+#define RADIOLIB_LORAWAN_APP_KEY   0xF1, 0x79, 0xA3, 0xA3, 0xF9, 0x5F, 0xDB, 0x88, 0xCB, 0xC5, 0xC7, 0xAA, 0xB8, 0x42, 0xBC, 0x98 // TTN 등록 Application - Device의 APP_KEY
 #endif
 
 #ifndef RADIOLIB_LORAWAN_NWK_KEY
-#define RADIOLIB_LORAWAN_NWK_KEY   0xD7, 0x0F, 0x30, 0xC4, 0x0C, 0x79, 0x6B, 0x75, 0x6F, 0x7C, 0xF5, 0x6E, 0xA9, 0x0E, 0xEB, 0x4F // TTN 등록 Application - Device의 NWK_KEY
-#endif
+#define RADIOLIB_LORAWAN_NWK_KEY   0xD7, 0x0F, 0x30, 0xC4, 0x0C, 0x79, 0x6B, 0x75, 0x6F, 0x7C, 0xF5, 0x6E, 0xA9, 0x0E, 0xEB, 0x7F // TTN 등록 Application - Device의 NWK_KEY
+#endf
 
 // regional choices: EU868, US915, AU915, AS923, AS923_2, AS923_3, AS923_4, IN865, KR920, CN470
 const LoRaWANBand_t Region = KR920;
@@ -131,3 +131,4 @@ void arrayDump(uint8_t *buffer, uint16_t len) {
 
 
 #endif
+
