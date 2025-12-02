@@ -8,7 +8,7 @@ SX1262 radio = new Module(8, 14, 12, 13);
 //                       NSS, DIO1, RST, BUSY
 
 // how often to send an uplink - consider legal & FUP constraints - see notes
-const uint32_t uplinkIntervalSeconds = 1UL * 60UL; // 60초 단위로 변경 (AM1008W-K-P 데이터 수집 간격)
+const uint32_t uplinkIntervalSeconds = 1UL * 60UL; // 60초 단위(AM1008W-K-P 데이터 수집 간격)
 
 // joinEUI - previous versions of LoRaWAN called this AppEUI
 // for development purposes you can use all zeros - see wiki for details
@@ -17,12 +17,10 @@ const uint32_t uplinkIntervalSeconds = 1UL * 60UL; // 60초 단위로 변경 (AM
 #ifndef RADIOLIB_LORAWAN_DEV_EUI
 #define RADIOLIB_LORAWAN_DEV_EUI   0x000074FD66BA2010
 #endif
-// loRa-006: 0x000074FD66BA2010
 
 #ifndef RADIOLIB_LORAWAN_APP_KEY
 #define RADIOLIB_LORAWAN_APP_KEY   0xFA, 0x04, 0xEB, 0x1A, 0xBE, 0x37, 0xFC, 0x96, 0xC6, 0xD2, 0xB5, 0x05, 0x2B, 0xFA, 0x28, 0x21
 #endif
-// LoRa-006: 0xFA, 0x04, 0xEB, 0x1A, 0xBE, 0x37, 0xFC, 0x96, 0xC6, 0xD2, 0xB5, 0x05, 0x2B, 0xFA, 0x28, 0x21
 
 #ifndef RADIOLIB_LORAWAN_NWK_KEY
 #define RADIOLIB_LORAWAN_NWK_KEY   0xD8, 0x63, 0xD5, 0xB3, 0xE3, 0xD4, 0x22, 0x00, 0xEF, 0xAD, 0x5C, 0xD9, 0x33, 0x30, 0xA2, 0xE2
@@ -130,5 +128,6 @@ void arrayDump(uint8_t *buffer, uint16_t len) {
   }
   Serial.println();
 }
+
 
 #endif
